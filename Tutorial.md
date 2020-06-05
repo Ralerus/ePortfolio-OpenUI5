@@ -11,7 +11,7 @@ Philipp Rall
 To follow this tutorial you just need any IDE. I would recommend [Visual Studio Code](https://code.visualstudio.com/). To display the developed app make sure to install the extenstion "[LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)", you should find it in the Visual Studio Code marketplace. The extension starts a local development server with live reload.  
 Just right click the ```index.html``` and select "Open with Live Server".
 
-For this tutorial, we start with a given folder structure, which already contains the basic files like ```index.html```, ```Component.js```, and ```Manifest.json``` as well as a basic view with its controller. You can find this basic project [here](demo/Start_of_Tutorial/)
+For this tutorial, we start with a given folder structure, which already contains the basic files like ```index.html```, ```Component.js```, and ```Manifest.json``` as well as a basic view with its controller. You can find this basic project [here](demo/Start_of_Tutorial/webapp). For different steps of the tutorial I have pushed intermediate versions of the demo app to several branches. They are linked at the appropriate places in the tutorial.
 
 Let's take a quick look at the existing files.
 
@@ -144,6 +144,8 @@ in **webapp/view/App.view.xml**
     icon="sap-icon://sap-ui5"
 ```
 
+>That was version 1, you can find the current state of all files [here](https://github.com/Ralerus/ePortfolio-OpenUI5/tree/version1/webapp).
+
 ## 6. Introduction to i18n
 
 In this step, we want to introduce the internationalization feature of OpenUI5 into our app.
@@ -204,6 +206,8 @@ text="{i18n>buttonText}"
 ```
 
 From now on, all UI texts will follow this way.
+
+>That was version 2, you can find the current state of all files [here](https://github.com/Ralerus/ePortfolio-OpenUI5/tree/version2/webapp).
 
 ## 7. Implement Wizard with three WizardSteps (with icons) in View
 
@@ -288,6 +292,8 @@ submit=Submit
 namePlaceholder=Please enter your name!
 ```
 
+>That was version 3, you can find the current state of all files [here](https://github.com/Ralerus/ePortfolio-OpenUI5/tree/version3/webapp).
+
 ## 11.  Introduce JSON Model, connect the input field with the model
 
 To use the user inputs for our personalized hello message, we need to connect the UI elements to a data model.
@@ -339,6 +345,8 @@ value="{/name}"
 ```
 
 In the following steps, we need to further implement the controller of our application to receive and validate the user's inputs and generate the personalized message.
+
+>That was version 4, you can find the current state of all files [here](https://github.com/Ralerus/ePortfolio-OpenUI5/tree/version4/webapp).
 
 ## 12.  Write onInit Function of Controller (empty)
 
@@ -437,9 +445,11 @@ onShowHello : function () {
 }
 ```
 
+>That was version 5, you can find the current state of all files [here](https://github.com/Ralerus/ePortfolio-OpenUI5/tree/version5/webapp).
+
 ## 17. That's it!
 
-We did it, we created our own personalized say hello message wizard.  You can find the final implementation [here](Solution%20%of%20Tutorial/webapp).
+We did it, we created our own personalized say hello message wizard.
 
 To get an impression of the inbox-responsiveness of an OpenUI5 it is worth having a look at our app in the mobile device simulation of the Chrome DevTools. As can be seen on the screenshot, for instance, the wizard is displayed in an adapted form on mobile devices.
 
@@ -494,3 +504,5 @@ onRestart : function () {
     this._oView.byId("mySegmentedButtons").setSelectedItem("None");
 }
 ```
+
+>That was version 6, you can find the current state of all files [here](https://github.com/Ralerus/ePortfolio-OpenUI5/tree/version6/webapp).

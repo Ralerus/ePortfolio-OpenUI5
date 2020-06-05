@@ -1,4 +1,4 @@
-# E-Portfolio OpenUI5
+# ePortfolio OpenUI5
 
 ![UI5 Logo](img/UI5_logo.png)
 
@@ -8,7 +8,7 @@ Besides that, you can find a detailed tutorial of the live demo as well as the c
 - [Handout](Handout.md)
 - [Tutorial](Tutorial.md)
 - Slides
-- [Code of demo](demo/End_of_Tutorial/)
+- [Code of demo](demo/End_of_Tutorial/webapp)
 
 ## Prerequisites for the demo
 
@@ -16,6 +16,6 @@ To follow the demo you just need any IDE, I would recommend [Visual Studio Code]
 To display the developed app make sure to install the extenstion "[LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)", you should find it in the Visual Studio Code marketplace. The extension starts a local development server with live reload.
 Just right click the ```index.html``` and select "Open with Live Server".
 
-For this tutorial we start with a given folder structure, which already contains the basic files like ```index.html```, ```Component.js``` and ```Manifest.json``` as well as a basic view with its controller. You can find this basic project [here](demo/Start_of_Tutorial/).
+For this tutorial we start with a given folder structure, which already contains the basic files like ```index.html```, ```Component.js``` and ```Manifest.json``` as well as a basic view with its controller. You can find this basic project [here](demo/Start_of_Tutorial/webapp).
 
-For different steps of the tutorial I have pushed intermediate versions of the demo app to several branches. They are linked at the appropriate places in the tutorial
+For different steps of the tutorial I have pushed intermediate versions of the demo app to several branches. They are linked at the appropriate places in the tutorial.
