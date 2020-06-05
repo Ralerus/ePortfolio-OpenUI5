@@ -7,7 +7,7 @@ Besides that, you can find a detailed tutorial of the live demo as well as the c
 
 - [Handout](Handout.md)
 - [Tutorial](Tutorial.md)
-- Slides
+- [Slides](Presentation.pdf)
 - [Code of demo](demo/End_of_Tutorial/webapp)
 
 ## Prerequisites for the demo
