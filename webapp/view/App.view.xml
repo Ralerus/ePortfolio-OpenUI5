@@ -1,0 +1,13 @@
+<mvc:View
+	controllerName="se.openui5.helloworld.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+
+	<Shell>
+		<App id="app">
+			<Page title="{i18n>title}" titleAlignment="Center">
+				<Button class="sapUiSmallMargin" icon="sap-icon://sap-ui5" text="{i18n>buttonText}" press=".onShowHello"/>
+			</Page>
+		</App>
+	</Shell>
+</mvc:View>
