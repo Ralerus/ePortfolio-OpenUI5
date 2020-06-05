@@ -1,0 +1,30 @@
+<mvc:View
+	controllerName="se.openui5.helloworld.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+
+	<Shell>
+		<App id="app">
+			<Page title="{i18n>title}" titleAlignment="Center">
+				<Wizard id="myWizard">
+					<WizardStep title="{i18n>salutation}" icon="sap-icon://customer-briefing">
+						<SegmentedButton id="mySegmentedButton" selectedItem="None">
+							<items>
+								<SegmentedButtonItem text="{i18n>noSalutation}"/>
+								<SegmentedButtonItem text="{i18n>mrSalutation}"/>
+								<SegmentedButtonItem text="{i18n>msSalutation}"/>					
+							</items>
+						</SegmentedButton>
+					</WizardStep>
+					<WizardStep title="{i18n>name}" icon="sap-icon://database">
+						<Input placeholder="{i18n>namePlaceholder}"/>
+						<Button text="{i18n>submit}" type="Accept" press=".onSubmitName"/>
+					</WizardStep>					
+					<WizardStep title="{i18n>button}" icon="sap-icon://sap-ui5">
+						<Button class="sapUiSmallMargin" icon="sap-icon://sap-ui5" text="{i18n>buttonText}" press=".onShowHello"/>
+					</WizardStep>
+				</Wizard>					
+			</Page>
+		</App>
+	</Shell>
+</mvc:View>
