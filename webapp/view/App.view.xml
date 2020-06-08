@@ -22,7 +22,7 @@
 							<Button text="{i18n>submit}" type="Accept" press=".onSubmitName"/>
 						</WizardStep>					
 						<WizardStep title="{i18n>button}" icon="sap-icon://sap-ui5">
-							<Button class="sapUiSmallMargin" icon="sap-icon://sap-ui5" text="{i18n>buttonText}" press=".onShowHello"/>
+							<Button icon="sap-icon://sap-ui5" text="{i18n>buttonText}" press=".onShowHello"/>
 						</WizardStep>
 					</Wizard>
 				</content>
