@@ -11,7 +11,8 @@ Philipp Rall
 To follow this tutorial you just need any IDE. I would recommend [Visual Studio Code](https://code.visualstudio.com/). To display the developed app make sure to install the extenstion "[LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)", you should find it in the Visual Studio Code marketplace. The extension starts a local development server with live reload.  
 Just right click the ```index.html``` and select "Open with Live Server".
 
-For this tutorial, we start with a given folder structure, which already contains the basic files like ```index.html```, ```Component.js```, and ```Manifest.json``` as well as a basic view with its controller. You can find this basic project [here](demo/Start_of_Tutorial/webapp). For different steps of the tutorial I have pushed intermediate versions of the demo app to several branches. They are linked at the appropriate places in the tutorial.
+For this tutorial, we start with a given folder structure, which already contains the basic files like ```index.html```, ```Component.js```, and ```Manifest.json``` as well as a basic view with its controller.  
+You can find this basic project [here](demo/Start_of_Tutorial/webapp). For different steps of the tutorial I have pushed intermediate versions of the demo app to several branches. They are linked at the appropriate places in the tutorial.
 
 Let's take a quick look at the existing files.
 
@@ -26,7 +27,7 @@ Here we go!
 ## 1. Display "Hello World!"
 
 In the ```view``` folder we can find our primary view called ```App.view.xml``` (like the specified rootView in the ```Manifest.json```).
-The initial ```App.view.xml``` should has the following content:  
+The initial ```App.view.xml``` should have the following content:  
 
 in **webapp/view/App.view.xml**
 
@@ -213,7 +214,7 @@ From now on, all UI texts will follow this way.
 
 Normally we implement a business use case with OpenUI5 and need to find a suitable UI layout for this use case.
 In our example we want to implement the personalization process of a hello message, this process consists of three steps: Firstly, the selection of the salutation (None/Mr./Ms.). Secondly, the input of the user's name and lastly the generated button.
-If we take a look at the Fiori design guidelines, we notice that the [Wizard Floorplan](https://experience.sap.com/fiori-design-web/wizard/) perfectly fits our requirements. The floorplan description links also the [documentation](https://sapui5.hana.ondemand.com/#/api/sap.m.Wizard%23controlProperties) and some [samples](https://sapui5.hana.ondemand.com/#/entity/sap.m.Wizard/sample/sap.m.sample.Wizard) of the Wizard control in OpenUI5 at the bottom of the page.
+If we take a look at the Fiori design guidelines, we notice that the [Wizard Floorplan](https://experience.sap.com/fiori-design-web/wizard/) perfectly fits our requirements. The floorplan description also links the [documentation](https://sapui5.hana.ondemand.com/#/api/sap.m.Wizard%23controlProperties) and some [samples](https://sapui5.hana.ondemand.com/#/entity/sap.m.Wizard/sample/sap.m.sample.Wizard) of the Wizard control in OpenUI5 at the bottom of the page.
 
 With this information, we can implement the control inside our ```Page``` as follows.
 
@@ -248,7 +249,7 @@ Now we have to fill our wizard steps with some content. So let's start with the 
 ## 9. Add Segmented Buttons in the First Step
 
 In the first step, the user should be able to choose between three salutations: "None", "Mr." and "Ms."
-This use cases could be realized by a [SegmentedButton](https://openui5.hana.ondemand.com/api/sap.m.SegmentedButton). As we want the user to explicitly choose a salutation we set the ```selectedItem``` attribute to "None".
+This use case could be realized by a [SegmentedButton](https://openui5.hana.ondemand.com/api/sap.m.SegmentedButton). As we want the user to explicitly choose a salutation we set the ```selectedItem``` attribute to "None".
 
 in **webapp/view/App.view.xml**
 
@@ -273,7 +274,7 @@ msSalutation=Ms.
 
 ## 10.  Add Input field and button in the Second Step
 
-Only the content of our second step is still missing, so let's add there an input field with a placeholder for the user's name and a button to submit the input. We set the button ```type``` to "Accept" so it's shown green. The "onSubmitName" method is not implemented yet, we will add this method later.
+Only the content of our second step is still missing, so let's add an input field with a placeholder for the user's name and a button to submit the input there. We set the button ```type``` to "Accept" so it's shown green. The "onSubmitName" method is not implemented yet, we will add this method later.
 
 in **webapp/view/App.view.xml**
 

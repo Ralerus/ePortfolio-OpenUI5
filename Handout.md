@@ -31,7 +31,7 @@ Philipp Rall
 - One-time, one-way or two-way data binding possible
 - JSON, OData and XML data models supported
 
-### Internationalisation
+### Internationalization
 
 - All UI texts are outsourced in Resource bundle files
 - A separate file can be created for each language, files are part of the application, the browser automatically selects the respective language
@@ -42,14 +42,14 @@ Philipp Rall
 - **Almost no HTML/CSS code needed**: OpenUI5 is totally JavaScript and XML based, besides the index.html there is no other HTML code as well as no CSS code required
 - **Design Consistency**: High recognition value, apps look and feel uniformly through standardized SAP Fiori UX
 - **Predefined layouts**: Standardized layouts, floorplans and UI elements for many business use cases
-  &rarr; OpenUI5 apps look always as OpenUI5 apps, as they are consistent looking and easy to use enterprise applications
+  &rarr; OpenUI5 apps always look like OpenUI5 apps, as they are consistent looking and easy to use enterprise applications
 - **Strong internationalization support**
 - **Accessibility**: All UI-elements are accessible by default (e.g. Screen Reader Support, Keyboard handling, High-Contrast Black Theme)
 
 ## Disadvantages of OpenUI5
 
 - **Performance**: Other frameworks like React or Angular2 have better performance in initial loading and rendering. OpenUI5 code can run only on the client-side
-- **Custom controls**: Developing of custom controls which don't follow existing standardized floorplans can be difficult (remember that OpenUI5 apps look always as OpenUI5 apps)
+- **Custom controls**: Developing of custom controls which don't follow existing standardized floorplans can be difficult (remember that OpenUI5 apps look always like OpenUI5 apps)
 - **Mobile Native Development**: With OpenUI5 it's not possible to build native mobile apps, e.g. React allows native development with React Native
 
 ## Basic file structure
